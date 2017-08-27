@@ -14,6 +14,6 @@ VOLUME  /site
 
 EXPOSE  1313
 
-ENTRYPOINT ["/usr/bin/dumb-init", "--", "hugo"]
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 
-CMD [ "--help" ]
+CMD ["hugo", "serve", "-D"]
